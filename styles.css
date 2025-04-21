@@ -1,11 +1,18 @@
 :root {
     --penguin-face: white;
     --penguin-picorna: orange;
-    --penguin-skin: gray;
+    --penguin-skin-1: gray;
+    --penguin-skin-2: rgb(239, 240, 228);
+    --sky-color-1: rgb(118, 201, 255);
+    --sky-color-2: rgb(247, 255, 222);
+    --mountain-color-1: rgb(203, 241, 228);
+    --mountain-color-2: rgb(80, 183, 255);
+    --mountain-color-3: rgb(47, 170, 255);
+    --sun-color: yellow;
   }
 
   body {
-    background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
+    background: linear-gradient(45deg, var(--sky-color-1), var(--sky-color-2));
     margin: 0;
     padding: 0;
     width: 100%;
@@ -16,7 +23,7 @@
   .left-mountain {
     width: 300px;
     height: 300px;
-    background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
+    background: linear-gradient(var(--mountain-color-1), var(--mountain-color-2));
     position: absolute;
     transform: skew(0deg, 44deg);
     z-index: 2;
@@ -26,7 +33,7 @@
   .back-mountain {
     width: 300px;
     height: 300px;
-    background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
+    background: linear-gradient(var(--mountain-color-1), var(--mountain-color-3));
     position: absolute;
     z-index: 1;
     transform: rotate(45deg);
@@ -37,7 +44,7 @@
   .sun {
     width: 200px;
     height: 200px;
-    background-color: yellow;
+    background-color: var(--sun-color);
     position: absolute;
     border-radius: 50%;
     top: -75px;
@@ -68,8 +75,8 @@
     height: 45%;
     background: linear-gradient(
       45deg,
-      var(--penguin-skin),
-      rgb(239, 240, 228)
+      var(--penguin-skin-1),
+      var(--penguin-skin-2)
     );
     border-radius: 70% 70% 65% 65%;
     top: 10%;
@@ -194,7 +201,7 @@
     position: absolute;
     width: 50%;
     height: 45%;
-    background-color: var(--penguin-skin);
+    background-color: var(--penguin-skin-1);
     top: 10%;
     left: 25%;
     border-radius: 0% 0% 100% 100%;
@@ -206,7 +213,7 @@
     height: 60%;
     background: linear-gradient(
       90deg,
-      var(--penguin-skin),
+      var(--penguin-skin-1),
       rgb(209, 210, 199)
     );
     border-radius: 30% 30% 30% 120%;
