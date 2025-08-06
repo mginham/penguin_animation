@@ -32,7 +32,7 @@ That’s it — no build tools or servers required.
 ```
 penguin_animation/
 │
-├── Penguin_Animation.html    # Main HTML file containing structure
+├── index.html                # Main HTML file containing structure
 ├── styles.css                # CSS for styling and animations
 └── README.md                 # Project documentation
 ```
